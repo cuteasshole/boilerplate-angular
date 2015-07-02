@@ -1,0 +1,22 @@
+
+a{
+  @include clear-hyperlink;
+}
+
+ul{
+  margin-left: 18px;
+}
+
+// Generate: h1-h6
+$headingText: h !default;
+@for $i from 1 through 6{
+  #{$headingText}#{$i}{
+    margin: 0 0 10px;
+    font-weight: 400;
+  }
+}
+
+// reset for paragraph
+p{
+  margin: 0 0 10px;
+}

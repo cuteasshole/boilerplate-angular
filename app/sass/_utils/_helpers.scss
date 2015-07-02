@@ -1,0 +1,22 @@
+
+// .cUL{
+//   @include clear-list;
+// }
+//
+// .clearfix{
+//   @include clearfix;
+// }
+
+.label-inline{
+  display: inline-block;
+  >input{
+    display: inline-block;
+  }
+}
+
+.label-block{
+  display: block;
+  >input{
+    display: block;
+  }
+}

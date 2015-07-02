@@ -1,0 +1,27 @@
+
+// Basic CSS Reset
+// http://stackoverflow.com/questions/3485720/which-html5-reset-css-do-you-use-and-why
+img,
+object,
+embed {max-width: 100%;}
+html {overflow-y: scroll;}
+
+// Better box model by default.
+// https://css-tricks.com/box-sizing/
+*, *:before, *:after {
+  @include css3(box-sizing, border-box);
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-size: $default-fontsize;
+  font-family: $default-fontfamily;
+  font-weight: $default-fontweight;
+  line-height: $default-lineheight;
+  color: $default-textcolor;
+  background-color: $default-background;
+  // background-image: url("#{$img-path}/twinkle_twinkle.png");
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
